@@ -15,6 +15,7 @@
 
 ```
 .
+├── examples/  # 知识点配套可运行示例（01~19，按学习顺序编号）
 ├── notes/     # 知识点笔记、语法总结
 ├── choice/    # 选择题练习
 ├── fill/      # 程序填空题
@@ -51,7 +52,46 @@ gcc -Wall -Wextra -std=c99 hello.c -o hello
 7. 编译预处理、文件操作
 8. 常用算法：排序、查找、穷举、递归、字符串处理
 
-## 五、Git 常用命令
+## 五、代码示例索引
+
+### examples/ —— 知识点配套示例（均可用 `gcc -Wall -Wextra -std=c99` 零警告编译运行）
+
+| 编号 | 文件 | 知识点 |
+|---|---|---|
+| 01 | 01_hello.c | 程序结构、main、printf |
+| 02 | 02_variables.c | 数据类型、常量、sizeof、ASCII |
+| 03 | 03_input_output.c | printf 格式符、宽度对齐、scanf 与 & |
+| 04 | 04_selection.c | if/else if、逻辑运算、switch 穿透 |
+| 05 | 05_loop.c | for/while/do-while、break/continue、循环嵌套 |
+| 06 | 06_array.c | 一维数组遍历、求和/最值/逆序 |
+| 07 | 07_function.c | 函数声明定义、值传递、递归 |
+| 08 | 08_array_2d.c | 二维数组、行列遍历、主对角线 |
+| 09 | 09_string.c | '\0'、strlen/sizeof、string.h、字符统计转换 |
+| 10 | 10_pointer_basic.c | 指针基础：& 取址、* 解引用 |
+| 11 | 11_pointer_array.c | 数组名即地址、a[i]≡*(a+i)、指针遍历 |
+| 12 | 12_pointer_function.c | 指针作函数参数、传址调用 |
+| 13 | 13_struct.c | 结构体、共用体、枚举、typedef |
+| 14 | 14_preprocess_scope.c | 宏定义、全局/局部、static |
+| 15 | 15_file_io.c | 文件 fopen/fprintf/fscanf/fclose |
+| 16 | 16_bubble_sort.c | 冒泡排序 |
+| 17 | 17_selection_sort.c | 选择排序 |
+| 18 | 18_search.c | 顺序查找、折半（二分）查找 |
+| 19 | 19_classic_math.c | 素数、水仙花数、斐波那契、最大公约数 |
+
+> 建议学习顺序：01→15 打语法基础，16→19 练算法，再进入下面的题型实战。
+
+### 题型实战（fill / correct / design）
+
+| 目录 | 文件 | 题型与考点 |
+|---|---|---|
+| fill | 01_fill_array_avg.c | 填空：数组遍历累加求平均 |
+| fill | 02_fill_string_digit.c | 填空：字符串中统计数字字符 |
+| correct | 01_correct_swap.c | 改错：值传递失效 → 指针传址交换 |
+| correct | 02_correct_common.c | 改错：`=`与`==`、整数除法、scanf 漏 & |
+| design | 01_design_max_index.c | 设计：求最大值及其下标 |
+| design | 02_design_pass_rate.c | 设计：统计及格人数与及格率 |
+
+## 六、Git 常用命令
 
 ```bash
 git add .                 # 暂存所有改动
